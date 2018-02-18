@@ -21,11 +21,6 @@ while True:
     type_info = str(input("Which information you want to recieve?(Location/Name/Followers): "))
     js = json.loads(data)
     js_1 = js['users'][0]
-    #print(js_1["name"])
-    #map = point(js_1['location'])
-    #j = json.dumps(js)
-    #headers = dict(connection.getheaders())
-    #print('Remaining', headers['x-rate-limit-remaining'])
 
     if type_info.lower() =="location":
         print(js_1['location'])
@@ -37,5 +32,3 @@ while True:
     else:
         print("Please try again!")
 
-
-    #print(friends, loc_friends)
